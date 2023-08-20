@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamond Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js"></script>
+</head>
+<body style="display: table; margin: auto;">
+    <div>
+        <h3>Questão 1</h3>
+        <p style="text-decoration: underline;">Escreva uma função que lê um nº inteiro de um campo e mostre uma mensagem indicando se este número é par ou ímpar.</p>
+        <section style="display: flex; gap: 10px;"> 
+            <input type="number" id="resposta-1" name="resposta-1">
+            <input type="button" class="button-primary" value="Ler número" onclick=showNumber1()>
+        </section>
+        <h5>Resposta:</h5>
+        <p id="resultado-1" style="display: hidden;"></p>
+        <hr>
+    </div>
+
+    <div>
+        <h3>Questão 2</h3>
+        <p style="text-decoration: underline;">Escreva uma função que lê dois nº inteiros diferentes e mostre uma mensagem indicando qual é o maior.<p>
+        <section style="display: flex; gap: 10px;"> 
+            <input type="number" style="width: 100px" placeholder="Numero 1" id="resposta-2.1">
+            <input type="number" style="width: 100px" placeholder="Numero 2" id="resposta-2.2">
+            <input type="button" class="button-primary" value="Ler números" onclick=showNumber2()>
+        </section>
+        <h5>Resposta:</h5>
+        <p id="resultado-2.1" style="display: hidden;"></p>
+        <p id="resultado-2.2" style="display: hidden;"></p>
+        <hr>
+    </div>
+
+    <div>
+        <h3>Questão 3</h3>
+        <p style="text-decoration: underline;">Escreva uma função que lê o ano de nascimento de uma pessoa. Mostre uma mensagem que diga se ela poderá ou não votar este ano (não é necessário considerar o mês em que a pessoa nasceu).</p>
+        <section style="display: flex; gap: 10px;"> 
+            <input type="date" id="resposta-3" name="resposta-3">
+            <input type="button" class="button-primary" value="Ler ano" onclick=showNumber3()>
+        </section>
+        <h5>Resposta:</h5>
+        <p id="resultado-3" style="display: hidden;"></p>
+        <hr>
+    </div>
+
+    <div>
+        <h3>Questão 4</h3>
+        <p style="text-decoration: underline;">Escreva uma função para ler o salário mensal atual de um funcionário e o percentual de reajuste. Mostre uma mensagem indicando o valor do novo salário.</p>
+        <section style="gap: 10px;"> 
+            <label for="resposta-4-salario">Salario:</label>
+            <input type="number" id="resposta-4-salario" name="#">
+            <label for="resposta-4-reajuste">Reajuste</label>
+            <input type="number" id="resposta-4-reajuste" name="#">
+
+            <input type="button" class="button-primary" value="Calcular Salário" onclick=showNumber4()>
+        </section>
+        <h5>Resposta:</h5>
+        <p id="resultado-4" style="display: hidden;"></p>
+        <hr>
+    </div>
+
+    <div>
+        <h3>Questão 5</h3>
+        <p style="text-decoration: underline;">Escreva uma função que leia um número inteiro de 1 a 7 e informe o dia da semana correspondente, sendo domingo o dia de número 1. Se o número não corresponder a um dia da semana, mostre uma mensagem de erro.</p>
+        <section style="display: flex; gap: 10px;"> 
+            <input type="number" id="resposta-5" name="" min="1" max="7" value="1" >
+            <input type="button" class="button-primary" value="Ler número" onclick=showNumber5()>
+        </section>
+        <h5>Resposta:</h5>
+        <p id="resultado-5" style="display: hidden;"></p>
+        <hr>
+    </div>
+
+    <div>
+        <h3>Questão 6</h3>
+        <p style="text-decoration: underline;">Escreva uma função que recebe um número inteiro positivo, e mostre na tela todos os números até chegar ao seu valor.</p>
+        <section style="display: flex; gap: 10px;"> 
+            <input type="number" id="resposta-6" name="resposta-6">
+            <input type="button" class="button-primary" value="Ler número" onclick=showNumber6()>
+        </section>
+        <h5>Resposta:</h5>
+        <p id="resultado-6" style="display: hidden;"></p>
+        <hr>
+    </div>
+
+    <div>
+        <h3>Questão 7</h3>
+        <p style="text-decoration: underline;">Escreva uma função que recebe um número inteiro positivo, e exiba mostre soma de todos os números menores que ele.</p>
+        <section style="display: flex; gap: 10px;"> 
+            <input type="number" id="resposta-7" name="resposta-7">
+            <input type="button" class="button-primary" value="Ler número" onclick=showNumber7()>
+        </section>
+        <h5>Resposta:</h5>
+        <p id="resultado-7" style="display: hidden;"></p>
+        <hr>
+    </div>
+
+    <div>
+        <h3>Questão 8</h3>
+        <p style="text-decoration: underline;">Escreva uma função que recebe um número inteiro positivo, e mostre todos os números ímpares até chegar ao seu valor.</p>
+        <section style="display: flex; gap: 10px;"> 
+            <input type="number" id="resposta-8" name="resposta-8">
+            <input type="button" class="button-primary" value="Ler número" onclick=showNumber8()>
+        </section>
+        <h5>Resposta:</h5>
+        <p id="resultado-8" style="display: hidden;"></p>
+        <hr>
+    </div>
+
+    <div>
+        <h3>Questão 9</h3>
+        <p style="text-decoration: underline;">Escreva uma função que recebe um lista de 5 números inteiros em forma de string separada por “-”, converta para array e mostre a soma de todos os números que são menores que 30.</p>
+        <section style="display: flex; gap: 10px;"> 
+            <input type="text" id="resposta-9" name="resposta-9" placeholder="Ex: 5-15-12-3-5">
+            <input type="button" class="button-primary" value="Ler número" onclick=showNumber9()>
+        </section>
+        <h5>Resposta:</h5>
+        <p id="resultado-9" style="display: hidden;"></p>
+        <hr>
+    </div>
+
+    <div>
+        <h3>Questão 10</h3>
+        <p style="text-decoration: underline;">Escreva uma função que recebe um lista de 5 números inteiros em forma de string separada por “/”, converta para array mostre quantidades de valores maior que 50</p>
+        <section style="display: flex; gap: 10px;"> 
+            <input type="text" id="resposta-10" name="resposta-10" placeholder="Ex: 5/10/5/10/4">
+            <input type="button" class="button-primary" value="Ler número" onclick=showNumber10()>
+        </section>
+        <h5>Resposta:</h5>
+        <p id="resultado-10" style="display: hidden;"></p>
+        <hr>
+    </div>
+
+    <div>
+        <h3>Questão 11</h3>
+        <p style="text-decoration: underline;">Escreva uma função que recebe uma string e mostre na tela o seu inverso. Não vale usar a função reverse </p>
+        <section style="display: flex; gap: 10px;"> 
+            <input type="text" id="resposta-11" name="resposta-11">
+            <input type="button" class="button-primary" value="Ler número" onclick=showNumber11()>
+        </section>
+        <h5>Resposta:</h5>
+        <p id="resultado-11" style="display: hidden;"></p>
+        <hr>
+    </div>
+
+    <div>
+        <h3>Questão 12</h3>
+        <p style="text-decoration: underline;">Escreva uma função que receberá uma string composta de letras minúsculas e mostre seu resultado com a primeira e a última letra maiúsculas.</p>
+        <section style="display: flex; gap: 10px;"> 
+            <input type="text" id="resposta-12" name="resposta-12" oninput=transformarMinusculas()>
+            <input type="button" class="button-primary" value="Ler número" onclick=showNumber12()>
+        </section>
+        <h5>Resposta:</h5>
+        <p id="resultado-12" style="display: hidden;"></p>
+        <hr>
+    </div>
+    
+
+</body>
+</html>
